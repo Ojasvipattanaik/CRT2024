@@ -1,0 +1,50 @@
+Electricity Bill 23
+
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int main() {
+7
+​
+8
+    int no_of_units;
+9
+    scanf("%d",&no_of_units);
+10
+    if(no_of_units<=200){
+11
+        printf("Rs.%.0f",(0.5*no_of_units));
+12
+    }
+13
+    else if(no_of_units>200 && no_of_units<=400){
+14
+         printf("Rs.%.0f",(0.65*no_of_units +100));
+15
+    }
+16
+    else if(no_of_units>400 && no_of_units<=600){
+17
+         printf("Rs.%.0f",(0.80*no_of_units + 200));
+18
+    }
+19
+    else{
+20
+         printf("Rs.%.0f",(1.25*no_of_units + 425));
+21
+    }
+22
+    return 0;
+23
+}
+24
+​
