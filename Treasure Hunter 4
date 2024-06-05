@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,b,bb;
+    scanf("%d%d%d",&n,&b,&bb);
+    int ben_share = n*b/100;
+    int rem_share1 = (n - ben_share);
+    int blackbeard_share = rem_share1*bb/100;
+    int rem_share2 = rem_share1 - blackbeard_share;
+    int crew_share = (rem_share2/3);
+    printf("%d\n",ben_share);
+    printf("%d\n",blackbeard_share);
+    printf("%d\n",crew_share);
+    return 0;
+}
