@@ -1,0 +1,27 @@
+Read two numbers, perform mathematical operations based on 1: addition, 2: subtraction, 3:Multiplication, 4:Division
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int choice;
+    scanf("%d",&choice);
+    switch(choice){
+        case 1:
+        printf("%d",(a+b));
+        break;
+        case 2:
+        printf("%d",(a-b));
+        break;
+        case 3:
+        printf("%d",(a*b));
+        break;
+        case 4:
+        printf("%d",(a/b));
+        break;
+        default:
+        printf("INVALID CHOICE");
+    }
+    return 0;
+}
